@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nevada Seismological Lab</title>
+<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="/lib/font-awesome-4.5.0/css/font-awesome.min.css">
+<style>
+	@font-face {
+		font-family: "Myriad Pro 1167301";
+		src: url("/fonts/76fda6fb-8617-4e88-b290-945c47127ceb.eot?#iefix") format("eot"), url("/fonts/01932eb5-2a4e-4bd4-b8a8-8e04f69b2d66.woff") format("woff");
+	}
+	@font-face {
+		font-family: "Myriad Pro Cond 1167289";
+		src: url("/fonts/ee091f8d-27cd-489b-b7a1-f77d6d222251.woff") format("woff");
+	}
+	a:link{
+		text-decoration:none;
+		color:#036;
+	}
+	a:visited{
+		color:#036;
+		text-decoration:none;
+	}
+	a:hover{
+		color:#999;
+		text-decoration:none;
+	}
+	a:active{
+		color:#036;
+		text-decoration:none;
+	}
+	body {
+    margin: 0;
+    font-family: "Myriad Pro 1167301","Helvetica Neue",Helvetica,Arial,sans-serif;
+		color: #555555;
+		background-color: #eeeeee;
+		/*font-family: Tahoma, Verdana, Arial, sans-serif; */
+    }
+	.main-container {
+		width: 85%;
+		min-width: 960px;
+		max-width: 1140px;
+		padding:0px 15px;
+		margin-top:0;
+		margin-bottom:0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	table, tr, tbody, td{
+		border: none;
+	}
+	td {
+		border: 0;
+	}
+	h1 {
+		margin-top:0;
+		color: #036;
+	}
+	h2 {
+    font-family: "Myriad Pro Cond 1167289","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size:36px;
+		color: #036;
+		font-weight:normal;
+
+	}
+	h3 {
+    font-family: "Myriad Pro Cond 1167289","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size:24px;
+		color: #036;
+		font-weight:normal;
+
+	}
+	hr {
+		height:1px;
+		width:95%;
+		color:#999999;
+		border:none;
+		background-color:#999999;
+	}
+	.bold {
+		font-weight: 600;
+	}
+	.thin {
+		font-weight: 500;
+	}
+	#navbar {
+		margin-top: 0px;
+		height: 56px;
+		//height: 3.111em;
+		color: #036;
+		background-color: rgba(255, 255, 255, 0.75);
+	}
+	#bigN {
+		//padding: 5px;
+	}
+	#main-content {
+		background-color:#ffffff;
+		//background-color:#000000;
+		padding-top:10px;
+	}
+	.logo {
+		padding:0px 5px;
+		margin-top: 0;
+		margin-bottom: 0;
+		//width:320px;
+		font-size: 1.125em;
+		//font-size: 1em;
+		font-weight: 500;
+		//line-height: 3.0em;
+		line-height: 56px;
+	}
+	#nsl-logo {
+		font-size: 1.5em;
+		text-align:right;
+	}
+	.nav-table {
+		width:100%;
+		//margin-left: auto;
+		//margin-right: auto;
+	}
+	#nsl-nav-image-n {
+		width: 30px;
+	}
+	#nsl-nav-unr {
+		//text-align:right;
+		margin-right:1em;
+	}
+	#unr-logo {	
+		font-size: 1.125em;
+	}
+	#nsl-logo {	
+		font-size: 1.25em;
+	}
+	#header {
+		background-color: #000000;
+		background-size: cover;
+		background-image: url("/img/mr_ed.jpg");
+		height: 420px;
+		position: relative;
+	}
+	#icons {
+		font-size:1.25em;
+	}
+	#header-bottom {
+		position:absolute;
+		bottom:0px;
+		background-color: rgba(255, 255, 255, 0.75);
+		height:140px;
+	}
+	#main-section1 {
+		padding:10px;
+	}
+	#footer-p {
+		text-align: center;
+	}
+	#nsl-logo-stacked {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 1.5em;
+		text-align:left;
+		color: #036;
+		line-height: 0.9;
+	}
+	#nv-outline {
+		padding-top:0.2em;
+		height: 4.5em;
+	}
+	#nv-outline-logo {
+		height: 2em;
+	}
+	#nsl-full-logo {
+		height:56px;
+	}
+	#nsl-full-logo-bw {
+		padding:17px 5px;
+		background-color:#000;
+		height:56px;
+	}
+	.subject {
+		margin:5px;
+		border:dashed #999 1px;
+		padding:15px;
+		float: left;
+	}
+	#bottom {
+		clear: both;
+	}
+	#nsl-logo-div {
+		padding:15px;
+		background-color: rgba(255, 255, 255, 0.60);
+		text-align: left;
+	}
+	#nsl-logo-img {
+	}
+	#nsl-sw-desc {
+		padding: 1px 20px 20px 20px;
+		border-radius: 20px;
+		background-color: rgba(255, 255, 255, 0.75);
+		text-align:right;
+	}
+</style>
+</head>
+<body>
+<div id="header">
+	<nav id="navbar">
+		<div class="main-container" id="navbar2">
+			<table class="nav-table">
+				<tr>
+					<td id="nsl-nav-image-n">
+						<a href="http://www.unr.edu"><img id="bigN" src="/img/N.jpg"></a>
+					</td>
+					<td id="nsl-nav-unr">
+						<a href="http://www.unr.edu"><h1 class="logo", id="unr-logo">University of Nevada, Reno</h1><a>
+					</td>
+					<td id="nsl-nav-nsl">
+						<h1 class="logo", id="nsl-logo">
+							<!--
+							<a href="/"><span class="bold">Nevada Seismo</span>logical <span class="bold">Lab</span>oratory</a> | 
+							-->
+							<a href="/"><span class="bold">Open</span>Source<span class="bold">Software</span>@NSL</a> | 
+							<span id="icons">
+							<a href="https://twitter.com/NVEarthquakes"><i class="fa fa-twitter-square"></i></a>
+							<a href="https://facebook.com/NevadaSeismo"><i class="fa fa-facebook-square"></i></a>
+							<a href="http://www.youtube.com/user/nvseismolab"><i class="fa fa-youtube-square"></i></a>
+							<a href="https://github.com/NVSeismoLab"><i class="fa fa-github-square"></i></a>
+							</span>
+						</h1>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</nav>
+	<div class="main-container" id="nsl-logo-div">
+		<table id="nsl-logo-tbl">
+			<tr>
+				<td id="nsl-logo-cell">
+					<a href="http://www.seismo.unr.edu"><img id="nsl-logo-img" src="/img/nsl-blue-logo-full.svg"></a>
+				</td>
+				<td>
+					<div id="nsl-sw-desc">
+						<h2>Software Development</h2>
+						<p id="nsl-desc-p" style="color:#222222;">At NSL we are constantly writing and maintaining software for seismic data acquisition, earthquake detection and analysis, data archiving, fire camera image processing, networking, monitoring, and countless other projects related to managing environmental sensor networks. Our source code is available to the extent the law and our staffing allows, with the hopes that the environmental fields can more closely work together to maintain professional operational software. This site is an overview of projects based on general category. It is a preliminary work-in-progress, stay tuned for more!</p>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div class="main-container" id="main-content">
+	<div id="main-section1">
+		<h2 style="text-align:right;">Projects</h2>
+		<h2><i class="fa fa-archive fa-fw"></i> Data Formats</h2>
+		<p>We have an extensive collection of software utilities for data conversion and encoding/decoding to and from various formats that are only used in seismology, like QuakeML formatting in <a href="https://github.com/NVSeismoLab/qmlutil">qmlutil</a>, Steim compression decoding for Go and Python, etc (the fact that seismology has its own formats and we should abandon them as soon as humanly possible), and maybe our RefTek <a href="https://github.com/NVSeismoLab/refutil">refutil</a> packet-processing libraries</p>
+		<hr>
+		<h2><i class="fa fa-gears fa-fw"></i> Analysis</h2>
+		<p>We have projects that enable seismic analysis and research, like <a href="https://github.com/NVSeismoLab/hashpy">HASHpy</a>, a Fortran/Python rewrite of the HASH first-motion focal mechanism program, and implementations of published algorithms, like the <a href="https://github.com/NVSeismoLab/eqclustering">eqclustering</a> method. We also have code that integrates with 3rd party services like the USGS Product Description Layer (PDL) and FindMeSpot.</p>
+		<hr>
+		<h2><i class="fa fa-image fa-fw"></i> Visualization</h2>
+		<p>Description of projects and forks that enable visualization of data and products, like our focal mech stereonet.js, maybe some mapping stuff, maybe not.</p>
+		<hr>
+		<h2><i class="fa fa-sitemap fa-fw"></i> Infrastructure</h2>
+		<p>Description of projects to manage installation and dependencies of seismic software, systemd files, Salt states and formulas for using <a href="https://github.com/NVSeismoLab/antelope-formula">Antelope</a>, <a href="https://github.com/NVSeismoLab/obspy-formula">ObsPy</a>, Ringservers, RefTek utilities, SeisComp3, and assets in cloud providers, with and without Salt, i.e. Lambda scripts or GCP queries?</p>
+		<hr>
+		<p style="text-align:center">Copyright 2016 University of Nevada, Reno</p>
+	</div>
+</div>
+
+</body>
+</html>
