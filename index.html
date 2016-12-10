@@ -135,7 +135,7 @@
 		background-color: #000000;
 		background-size: cover;
 		background-image: url("/img/mr_ed.jpg");
-		height: 420px;
+		//height: 420px;
 		position: relative;
 	}
 	#icons {
@@ -144,11 +144,14 @@
 	#header-bottom {
 		position:absolute;
 		bottom:0px;
-		background-color: rgba(255, 255, 255, 0.75);
+		background-color: rgba(255, 255, 255, 0.35);
 		height:140px;
 	}
 	#main-section1 {
-		padding:10px;
+		margin:10px 50px;
+		border: 2px solid #036;
+		border-radius:20px;
+		padding:0px 35px;
 	}
 	#footer-p {
 		text-align: center;
@@ -187,12 +190,13 @@
 	}
 	#nsl-logo-div {
 		padding:15px;
-		background-color: rgba(255, 255, 255, 0.60);
+		background-color: rgba(255, 255, 255, 0.50);
 		text-align: left;
 	}
 	#nsl-logo-img {
 	}
 	#nsl-sw-desc {
+		margin-left:10px;
 		padding: 1px 20px 20px 20px;
 		border-radius: 20px;
 		background-color: rgba(255, 255, 255, 0.75);
@@ -239,7 +243,7 @@
 				<td>
 					<div id="nsl-sw-desc">
 						<h2>Software Development</h2>
-						<p id="nsl-desc-p" style="color:#222222;">At NSL we are constantly writing and maintaining software for seismic data acquisition, earthquake detection and analysis, data archiving, fire camera image processing, networking, monitoring, and countless other projects related to managing environmental sensor networks. Our source code is available to the extent the law and our staffing allows, with the hopes that the environmental fields can more closely work together to maintain professional operational software. This site is an overview of projects based on general category. It is a preliminary work-in-progress, stay tuned for more!</p>
+						<p id="nsl-desc-p">At NSL we write and maintain software for seismic data acquisition, earthquake detection and analysis, data archiving, fire camera image processing, networking, monitoring, and countless other projects related to managing environmental sensor networks. Our source code is available as the law and our staffing allows, in the hopes that the environmental fields can more closely work together to maintain professional operational software. This site is an overview of projects based on general category. It is a preliminary work-in-progress, stay tuned for more!</p>
 					</div>
 				</td>
 			</tr>
@@ -248,15 +252,15 @@
 </div>
 <div class="main-container" id="main-content">
 	<div id="main-section1">
-		<h2 style="text-align:right;">Projects</h2>
+		<!-- <h2 style="text-align:right;">Projects</h2> -->
 		<h2><i class="fa fa-archive fa-fw"></i> Data Formats</h2>
-		<p>We have an extensive collection of software utilities for data conversion and encoding/decoding to and from various formats that are only used in seismology, like QuakeML formatting in <a href="https://github.com/NVSeismoLab/qmlutil">qmlutil</a>, Steim compression decoding for Go and Python, etc (the fact that seismology has its own formats and we should abandon them as soon as humanly possible), and maybe our RefTek <a href="https://github.com/NVSeismoLab/refutil">refutil</a> packet-processing libraries</p>
+		<p>We have an extensive collection of software utilities for data conversion and encoding/decoding to and from various formats that are only used in seismology, like QuakeML formatting in <a href="https://github.com/NVSeismoLab/qmlutil">qmlutil</a>, Steim compression decoding for Go and Python, and maybe our RefTek packet-processing libraries. Future plans include wider internal support for the FDSN StationXML standard.</p>
 		<hr>
 		<h2><i class="fa fa-gears fa-fw"></i> Analysis</h2>
 		<p>We have projects that enable seismic analysis and research, like <a href="https://github.com/NVSeismoLab/hashpy">HASHpy</a>, a Fortran/Python rewrite of the HASH first-motion focal mechanism program, and implementations of published algorithms, like the <a href="https://github.com/NVSeismoLab/eqclustering">eqclustering</a> method. We also have code that integrates with 3rd party services like the USGS Product Description Layer (PDL) and FindMeSpot.</p>
 		<hr>
 		<h2><i class="fa fa-image fa-fw"></i> Visualization</h2>
-		<p>Description of projects and forks that enable visualization of data and products, like our focal mech stereonet.js, maybe some mapping stuff, maybe not.</p>
+		<p>Description of projects and forks that enable visualization of data and products, like our focal mech stereonet.js, maybe some Leaflet mapping stuff, and additional d3 utilities. Could also include tools for seismic monitoring, like our real-time detection map, and other seimology-related dashboards?</p>
 		<hr>
 		<h2><i class="fa fa-sitemap fa-fw"></i> Infrastructure</h2>
 		<p>Description of projects to manage installation and dependencies of seismic software, systemd files, Salt states and formulas for using <a href="https://github.com/NVSeismoLab/antelope-formula">Antelope</a>, <a href="https://github.com/NVSeismoLab/obspy-formula">ObsPy</a>, Ringservers, RefTek utilities, SeisComp3, and assets in cloud providers, with and without Salt, i.e. Lambda scripts or GCP queries?</p>
