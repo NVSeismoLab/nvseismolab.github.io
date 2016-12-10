@@ -13,17 +13,19 @@
 		font-family: "Myriad Pro Cond 1167289";
 		src: url("/fonts/ee091f8d-27cd-489b-b7a1-f77d6d222251.woff") format("woff");
 	}
+	a { 
+		color:#2e6ca2;
+	}
 	a:link{
 		text-decoration:none;
-		color:#036;
 	}
 	a:visited{
-		color:#036;
+		color:#2e6ca2;
 		text-decoration:none;
 	}
 	a:hover{
 		color:#999;
-		text-decoration:none;
+		text-decoration:underline;
 	}
 	a:active{
 		color:#036;
@@ -260,7 +262,7 @@
 		<p>We have projects that enable seismic analysis and research, like <a href="https://github.com/NVSeismoLab/hashpy">HASHpy</a>, a Fortran/Python rewrite of the HASH first-motion focal mechanism program, and implementations of published algorithms, like the <a href="https://github.com/NVSeismoLab/eqclustering">eqclustering</a> method. We also have code that integrates with 3rd party services like the USGS Product Description Layer (PDL) and FindMeSpot.</p>
 		<hr>
 		<h2><i class="fa fa-image fa-fw"></i> Visualization</h2>
-		<p>Description of projects and forks that enable visualization of data and products, like our focal mech stereonet.js, maybe some Leaflet mapping stuff, and additional d3 utilities. Could also include tools for seismic monitoring, like our real-time detection map, and other seimology-related dashboards?</p>
+		<p>Description of projects and forks that enable visualization of data and products, like our focal mech stereonet.js, maybe some Leaflet mapping stuff, and additional d3 utilities. Could also include tools for seismic monitoring, like our real-time detection map, and other seismology-related dashboards?</p>
 		<hr>
 		<h2><i class="fa fa-sitemap fa-fw"></i> Infrastructure</h2>
 		<p>Description of projects to manage installation and dependencies of seismic software, systemd files, Salt states and formulas for using <a href="https://github.com/NVSeismoLab/antelope-formula">Antelope</a>, <a href="https://github.com/NVSeismoLab/obspy-formula">ObsPy</a>, Ringservers, RefTek utilities, SeisComp3, and assets in cloud providers, with and without Salt, i.e. Lambda scripts or GCP queries?</p>
