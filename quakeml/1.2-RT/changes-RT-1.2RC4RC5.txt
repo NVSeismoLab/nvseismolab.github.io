@@ -1,0 +1,24 @@
+QuakeML
+
+changes from version RT-1.2RC4 to RT-1.2RC5
+
+============================================================================
+
+class EventType
+---------------
+
+add
+
+ * NOT_EXISTING
+
+class OriginQuality
+-------------------
+
+remove
+
+ * asociatedStationCount
+
+add 
+
+ * associatedStationCount
+============================================================================
